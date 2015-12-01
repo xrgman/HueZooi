@@ -99,6 +99,8 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Converters\HsvToRgb.cs" />
+    <Compile Include="Network.cs" />
     <Compile Include="HueLamp.cs" />
     <Compile Include="LampOverviewPage.xaml.cs">
       <DependentUpon>LampOverviewPage.xaml</DependentUpon>

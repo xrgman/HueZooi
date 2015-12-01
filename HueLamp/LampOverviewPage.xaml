@@ -18,15 +18,15 @@
 
         <GridView ItemsSource="{x:Bind HueLamps}" SelectionMode="None" IsItemClickEnabled="True" ItemClick="GridView_ItemClick" Grid.Row="1">
             <GridView.ItemTemplate>
-                <DataTemplate>
-                    
+                <DataTemplate x:DataType="local:HueLamp">
+                    <TextBlock Text="{x:Bind Name}"/>
                 </DataTemplate>
             </GridView.ItemTemplate>
         </GridView>
 
         <RelativePanel Grid.Row="2">
             <TextBlock Name="HueLampsTextBox" Text="Connected Huelamps: " FontSize="20" RelativePanel.AlignLeftWithPanel="True"/>
-            <TextBlock FontSize="20" Text="{x:Bind HueLamps.Count}" RelativePanel.RightOf="HueLampsTextBox" />
+            <TextBlock FontSize="20" Text="{x:Bind HueLamps.Count, Mode=OneWay}" RelativePanel.RightOf="HueLampsTextBox"  />
             <Button Name="RefreshButton"  Content="&#xE72C;" FontFamily="Segoe MDL2 Assets" FontSize="36" RelativePanel.AlignRightWithPanel="True" Click="RefreshButton_Click"/>
         </RelativePanel>
         

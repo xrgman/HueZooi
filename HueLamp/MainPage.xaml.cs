@@ -24,48 +24,14 @@ namespace HueLamp
 
         private async void ConnectButton_Click(object sender, RoutedEventArgs e)
         {
-            var cts = new CancellationTokenSource();
-            cts.CancelAfter(5000);
-
-            int port = Int32.Parse(ServerPortTextBox.Text);
-            string ipAdress = ServerIpTextBox.Text;
-            string username = "Wesley";
-            HttpClient client = new HttpClient();
-            RootObject contents = new RootObject()
+            Network network = new Network();
+            if (await network.Connect(ServerIpTextBox.Text, Int32.Parse(ServerPortTextBox.Text), "Wesley"))
             {
-                devicetype = ($"MijnApp#{username}")
-            }; 
-            HttpContent content = new StringContent(JsonConvert.SerializeObject(contents), Encoding.UTF8,"application/json");
-            var login = await client.PostAsync($"http://{ipAdress}:{port}/api/",content);
-            var result = await login.Content.ReadAsStringAsync();
-
-
-
-
-            System.Diagnostics.Debug.WriteLine(result.ToString());
-
-            JsonObject json;
-            
-    
-
-            bool parseOk = JsonObject.TryParse(result, out json);
-            if (parseOk)
-                System.Diagnostics.Debug.WriteLine(json);
+                System.Diagnostics.Debug.WriteLine("succes");
+                Frame.Navigate(typeof(LampOverviewPage), network);
+            }
             else
-                System.Diagnostics.Debug.WriteLine("goi");
-
-
-
-            //var response = await client.GetAsync($"http://{ipAdress}:{port}/api/b918a361eb708cbc4e7b001c7013c27");
-
-            //var result = await response.Content.ReadAsStringAsync();
-            //var serializer = DataContractJsonSerializer(typeof(RootObject));
-            //System.Diagnostics.Debug.WriteLine(result.ToString());
-
-
-            // Frame.Navigate(typeof(LampOverviewPage));
+                System.Diagnostics.Debug.WriteLine("link button moet ingedrukt worde");    
         }
-
-       
     }
 }

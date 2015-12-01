@@ -22,7 +22,7 @@
     <AppXManifest Include="C:\Users\Wesley\Documents\Visual Studio 2015\Projects\HueLamp\HueLamp\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-11-30T15:24:55.867</Modified>
+      <Modified>2015-12-01T13:49:06.649</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -70,15 +70,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Wesley\Documents\Visual Studio 2015\Projects\HueLamp\HueLamp\bin\x86\Debug\Core\entrypoint\HueLamp.exe">
       <PackagePath>entrypoint\HueLamp.exe</PackagePath>
-      <Modified>2015-11-30T15:24:55.354</Modified>
+      <Modified>2015-12-01T13:49:06.331</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Wesley\Documents\Visual Studio 2015\Projects\HueLamp\HueLamp\bin\x86\Debug\Core\HueLamp.exe">
       <PackagePath>HueLamp.exe</PackagePath>
-      <Modified>2015-11-30T15:24:55.865</Modified>
+      <Modified>2015-12-01T13:49:06.648</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Wesley\Documents\Visual Studio 2015\Projects\HueLamp\HueLamp\bin\x86\Debug\Core\HueLamp.xr.xml">
       <PackagePath>HueLamp.xr.xml</PackagePath>
-      <Modified>2015-11-30T08:43:19.076</Modified>
+      <Modified>2015-12-01T09:22:11.456</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Wesley\Documents\Visual Studio 2015\Projects\HueLamp\HueLamp\bin\x86\Debug\Core\Microsoft.ApplicationInsights.dll">
       <PackagePath>Microsoft.ApplicationInsights.dll</PackagePath>
@@ -114,7 +114,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Wesley\Documents\Visual Studio 2015\Projects\HueLamp\HueLamp\bin\x86\Debug\Core\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-11-30T12:08:49.512</Modified>
+      <Modified>2015-12-01T13:20:53.553</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Wesley\Documents\Visual Studio 2015\Projects\HueLamp\HueLamp\bin\x86\Debug\Core\System.AppContext.dll">
       <PackagePath>System.AppContext.dll</PackagePath>

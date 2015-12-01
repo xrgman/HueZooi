@@ -12,13 +12,18 @@ namespace HueLamp
     {
         [DataMember]
         public string devicetype { get; set; }
+    }
+
+    [DataContract]
+    public class RootLight
+    {
         [DataMember]
-        public string username { get; set; }
-
-
-        public override string ToString()
-        {
-            return "user: " + username;
-        }
+        public bool on { get; set; }
+        [DataMember]
+        public int bri { get; set; }
+        [DataMember]
+        public int hue { get; set; }
+        [DataMember]
+        public int sat { get; set; }
     }
 }
