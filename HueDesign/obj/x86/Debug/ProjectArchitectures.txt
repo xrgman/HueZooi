@@ -1,0 +1,2 @@
+C:\Users\Wesley\Desktop\HueDesign\HueDesign\HueDesign.csproj;x86
+C:\Users\Wesley\Desktop\SplitViewMenu\SplitViewMenu.csproj;x86

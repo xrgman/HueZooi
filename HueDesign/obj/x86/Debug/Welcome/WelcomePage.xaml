@@ -1,0 +1,22 @@
+﻿<Page
+    x:Class="HueDesign.Welcome.WelcomePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:HueDesign.Welcome"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="48"/>
+            <RowDefinition Height="200"/>
+            <RowDefinition Height="125"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Margin="10,0,0,0" FontSize="36" Text="Welkom"/>
+        <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE0C4;" FontSize="48" Margin="10,0,0,0"  Grid.Row="2" VerticalAlignment="Center"/>
+        <TextBlock Text="Stel eerst de applicatie in door op Settings te drukken in het menu" FontSize="24" Margin="68,0,0,0" Grid.Row="2" TextWrapping="WrapWholeWords" VerticalAlignment="Center"/>
+    </Grid>
+</Page>
+

@@ -1,0 +1,39 @@
+﻿<Page
+    x:Class="HueDesign.Room.RoomPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:HueDesign.Room"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="48"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0"
+                   Text="Room"
+                   FontSize="32"
+                   VerticalAlignment="Center"
+                   Margin="10,0,0,0"
+                   />
+        <ScrollViewer Grid.Row="1"
+                      VerticalScrollMode="Enabled"
+                      VerticalScrollBarVisibility="Hidden"
+                      HorizontalScrollMode="Enabled"
+                      HorizontalScrollBarVisibility="Hidden"
+                      >
+            <RelativePanel
+                Width="1000"
+                Height="1000">
+                <TextBlock Margin="110,100,0,0" FontSize="300">adsfasdf</TextBlock>
+            </RelativePanel>
+        </ScrollViewer>
+        <StackPanel FlowDirection="RightToLeft" Grid.Row="2">
+            <Button Height="50" Width="50" FontFamily="Segoe MDL2 Assets" Content="&#xE74D;"/>
+        </StackPanel>
+    </Grid>
+</Page>
+
