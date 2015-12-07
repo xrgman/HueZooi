@@ -14,7 +14,7 @@
             <RowDefinition Height="50"/>
         </Grid.RowDefinitions>
         <TextBlock Grid.Row="0"
-                   Text="Room"
+                   Text="Room(in dev)"
                    FontSize="32"
                    VerticalAlignment="Center"
                    Margin="10,0,0,0"
@@ -24,12 +24,35 @@
                       VerticalScrollBarVisibility="Hidden"
                       HorizontalScrollMode="Enabled"
                       HorizontalScrollBarVisibility="Hidden"
+                      x:Name="scrollViewer"
+                      PointerPressed="ScrollViewer_PointerPressed"
+                      PointerMoved="ScrollViewer_PointerMoved"
+                      PointerReleased="ScrollViewer_PointerReleased"
                       >
-            <RelativePanel
+            <Grid
                 Width="1000"
                 Height="1000">
-                <TextBlock Margin="110,100,0,0" FontSize="300">adsfasdf</TextBlock>
-            </RelativePanel>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                
+                <Rectangle Height="300" Width="300" Fill="GhostWhite" />
+                <Rectangle Height="300" Width="300" Fill="Gray" Grid.Column="1"/>
+                <Rectangle Height="300" Width="300" Fill="BlanchedAlmond" Grid.Column="2"/>
+                <Rectangle Height="300" Width="300" Fill="GhostWhite" Grid.Row="1" />
+                <Rectangle Height="300" Width="300" Fill="Blue" Grid.Row="1" Grid.Column="1"/>
+                <Rectangle Height="300" Width="300" Fill="GhostWhite" Grid.Row="1" Grid.Column="2" />
+                <Rectangle Height="300" Width="300" Fill="GhostWhite" Grid.Row="2" />
+                <Rectangle Height="300" Width="300" Fill="Blue" Grid.Row="2" Grid.Column="1"/>
+                <Rectangle Height="300" Width="300" Fill="GhostWhite" Grid.Row="2" Grid.Column="2" />
+            </Grid>
         </ScrollViewer>
         <StackPanel FlowDirection="RightToLeft" Grid.Row="2">
             <Button Height="50" Width="50" FontFamily="Segoe MDL2 Assets" Content="&#xE74D;"/>

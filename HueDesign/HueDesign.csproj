@@ -187,7 +187,7 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\SplitViewMenu\SplitViewMenu.csproj">
+    <ProjectReference Include="..\SplitViewMenu\SplitViewMenu.csproj">
       <Project>{fe57e901-bc4d-4c0b-a386-c253e0fc245c}</Project>
       <Name>SplitViewMenu</Name>
     </ProjectReference>
